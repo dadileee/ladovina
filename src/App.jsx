@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import logo from './assets/logo.png'
+import boardImg from './assets/board.jpg'
+import karteImg from './assets/karte.jpg'
+import diceImg from './assets/dice.jpg'
 import './App.css'
 
 const descriptions = {
@@ -59,7 +62,7 @@ function App() {
                 onMouseEnter={() => setHovered('board')}
                 onMouseLeave={() => setHovered(null)}>
                 <div className="card-inner">
-                  <img src="/src/assets/board.jpg" alt="Board Games" />
+                  <img src={boardImg} alt="Board Games" />
                   <span>Board Games</span>
                 </div>
               </a>
@@ -69,7 +72,7 @@ function App() {
                 onMouseEnter={() => setHovered('cards')}
                 onMouseLeave={() => setHovered(null)}>
                 <div className="card-inner">
-                  <img src="/src/assets/karte.jpg" alt="Trading Collectible Cards" />
+                  <img src={karteImg} alt="Trading Collectible Cards" />
                   <span>Trading Collectible Cards</span>
                 </div>
               </a>
@@ -79,7 +82,7 @@ function App() {
                 onMouseEnter={() => setHovered('rpg')}
                 onMouseLeave={() => setHovered(null)}>
                 <div className="card-inner">
-                  <img src="/src/assets/dice.jpg" alt="Role-playing Games" />
+                   <img src={diceImg} alt="Role-playing Games" />
                   <span>Role-playing Games</span>
                 </div>
               </a>

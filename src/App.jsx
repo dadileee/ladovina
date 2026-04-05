@@ -114,7 +114,15 @@ function App() {
         <section className="login-section">
   <div className="login-container">
     <div className="login-decoration">
-  <img src={logo} alt="Logo" className="spinning-logo" />
+  <div className="logo-coin">
+    <div className="coin-face front">
+      <img src={logo} alt="Logo" />
+    </div>
+    <div className="coin-face back">
+      <img src={logo} alt="Logo" />
+    </div>
+    <div className="coin-edge"></div>
+  </div>
   <div className="deco-lines">
     <span></span><span></span><span></span>
   </div>

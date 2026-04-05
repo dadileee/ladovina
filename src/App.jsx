@@ -114,42 +114,7 @@ function App() {
         <section className="login-section">
   <div className="login-container">
     <div className="login-decoration">
-  <div className="dice">
-    <div className="dice-face front">
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-    </div>
-    <div className="dice-face back">
-      <span className="dot"></span>
-    </div>
-    <div className="dice-face left">
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-    </div>
-    <div className="dice-face right">
-      <span className="dot"></span>
-      <span className="dot"></span>
-    </div>
-    <div className="dice-face top">
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-    </div>
-    <div className="dice-face bottom">
-      <span className="dot"></span>
-      <span className="dot"></span>
-      <span className="dot"></span>
-    </div>
-  </div>
-
+  <img src={logo} alt="Logo" className="spinning-logo" />
   <div className="deco-lines">
     <span></span><span></span><span></span>
   </div>

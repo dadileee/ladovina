@@ -334,75 +334,7 @@ main {
   z-index: 1;
 }
 
-/* Dekoracija lijevo */
 
-.login-decoration {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  perspective: 600px;
-}
-
-.coin {
-  width: 140px;
-  height: 140px;
-  position: relative;
-  transform-style: preserve-3d;
-  animation: spinCoin 5s infinite linear;
-  filter: drop-shadow(0 0 15px rgba(24, 158, 101, 0.5));
-}
-
-@keyframes spinCoin {
-  0%   { transform: rotateY(0deg); }
-  100% { transform: rotateY(360deg); }
-}
-
-.coin-front,
-.coin-back {
-  position: absolute;
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  overflow: hidden;
-  backface-visibility: hidden;
-}
-
-.coin-front { transform: translateZ(7px); }
-.coin-back  { transform: rotateY(180deg) translateZ(7px); }
-
-.coin-front img,
-.coin-back img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.coin-edge-strip {
-  position: absolute;
-  width: 13px;
-  height: 14px;
-  top: calc(50% - 7px);
-  left: calc(50% - 6.5px);
-  background: rgba(24, 158, 101, 0.9);
-  backface-visibility: hidden;
-}
-.deco-lines {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-}
-
-.deco-lines span {
-  display: block;
-  height: 2px;
-  background: linear-gradient(to right, transparent, rgba(24, 158, 101, 0.6), transparent);
-}
-
-.deco-lines span:nth-child(1) { width: 120px; }
-.deco-lines span:nth-child(2) { width: 80px; }
-.deco-lines span:nth-child(3) { width: 40px; }
 
 /* Login box */
 .login-box {

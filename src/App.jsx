@@ -114,15 +114,21 @@ function App() {
         <section className="login-section">
   <div className="login-container">
     <div className="login-decoration">
-  <div className="logo-coin">
-    <div className="coin-face front">
-      <img src={logo} alt="Logo" />
-    </div>
-    <div className="coin-face back">
-      <img src={logo} alt="Logo" />
-    </div>
-    <div className="coin-edge"></div>
+  <div className="coin">
+  <div className="coin-front">
+    <img src={logo} alt="Logo" />
   </div>
+  <div className="coin-back">
+    <img src={logo} alt="Logo" />
+  </div>
+  {Array.from({ length: 36 }).map((_, i) => (
+    <div
+      key={i}
+      className="coin-edge-strip"
+      style={{ transform: `rotateY(${i * 10}deg) translateZ(70px)` }}
+    />
+  ))}
+</div>
   <div className="deco-lines">
     <span></span><span></span><span></span>
   </div>
